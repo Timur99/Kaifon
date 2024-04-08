@@ -31,7 +31,7 @@ def photo(message):
 
     os.system("rembg i " + fileID +".jpg" + ' ' + fileID +"2.jpg")  # убираем фон
 
-    bot.send_message(message.chat.id, "Делаем красиво")
+    bot.send_message(message.chat.id, "Делаем красиво...")
 
     bot.send_photo(message.chat.id, photo=open(fileID +'2.jpg', 'rb'))
 
